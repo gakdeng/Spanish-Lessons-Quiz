@@ -17,7 +17,7 @@ questions.forEach((question) => {
     let userInput = confirm(question.q);
 
     if ((userInput && question.a === 't') || (!userInput && question.a === 'f')) {
-        score++;    // increment through scores 
+        score +=2;    // increment through scores 
         alert("That's correct");
     } else {
         alert("Oops! That's wrong!");
